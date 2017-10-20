@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="/css/w3.css"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>studentEdit</title>
+    <style type="text/css">
+        body {
+            /*background: #eee;*/
+            font-family: 华文细黑;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h4 class="w3-margin-12 w3-text-yellow"><i class="fa fa-male"></i>资料编辑</h4>
+    </div>
+    <div class="w3-container" id="studentContainerDiv">
+        <div id="photoDiv">
+            <img id="image" src="/image/bgpicture2.jpg">
+        </div>
+        <br>
+        <form id="meForm">
+            <div id="mainInfo" class="w3-border-left w3-border-blue w3-container">
+                <label class="w3-label">昵称:</label>
+                <input class="w3-input" name="nickName" value="张全蛋" >
+                <label class="w3-label">名字:</label>
+                <input class="w3-input" name="name" value="张二蛋" >
+            </div>
+            <br>
+            <div id="classInfo" class="w3-border-left w3-border-blue w3-container">
+                <label class="w3-label">学校:</label>
+                <select class="w3-select" name="school">
+                    <option value="">中南财经</option>
+                    <option value="">民大</option>
+                </select>
+                <label class="w3-label">学院:</label>
+                <select class="w3-select" name="xueyuan">
+                    <option value="">统数</option>
+                    <option value="">会计</option>
+                </select>
+                <label class="w3-label">专业:</label>
+                <select class="w3-select" name="zhuanye">
+                    <option value="">信科</option>
+                    <option value="">统计</option>
+                </select>
+                <label class="w3-label">班级:</label>
+                <select class="w3-select" name="banji">
+                    <option value="">1301</option>
+                    <option value="">1302</option>
+                </select>
+            </div>
+            <br>
+            <div id="homeInfo" class="w3-border-left w3-border-blue w3-container">
+                <label class="w3-label">国家:</label>
+                <select class="w3-select" name="country">
+                    <option value="1">china</option>
+                    <option value="2">america</option>
+                </select>
+                <label class="w3-label">省份:</label>
+                <select class="w3-select" name="province">
+                    <option value="1">河南</option>
+                    <option value="2">河北</option>
+                </select>
+                <label class="w3-label">城市:</label>
+                <select class="w3-select" name="city">
+                    <option value="1">郑州</option>
+                    <option value="2">永城</option>
+                </select>
+            </div>
+            <br>
+            <button class="w3-blue w3-btn-block" >提交</button>
+        </form>
+    </div>
+<a class="w3-tag w3-blue w3-opacity" href="/index" style="position: fixed;bottom: 50px;right: 5px;">返回主页</a>
+<div id="successModal" class="w3-modal">
+    <div class="w3-modal-content ">
+        <header class="w3-container w3-light-grey">
+            <h3>保存成功</h3>
+        </header>
+    </div>
+</div>
+<div id="errorModal" class="w3-modal">
+    <div class="w3-modal-content ">
+        <header class="w3-container w3-light-grey">
+            <h3>错误信息!</h3>
+        </header>
+        <div class="w3-container">
+            <p id="errorModalContent"></p>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+    //image宽高设置
+    $("#photoDiv").height($("#photoDiv").width());
+    $("#image").width($("#photoDiv").width());
+    $("#image").height($("#photoDiv").width());
+    //个人信息提交验证
+    $("#meForm").validate({
+        submitHandler: function (form) {
+            var submitForm = $(form).serialize();
+            console.log($(form).attr("id"));
+//            console.log(submitForm);
+            $.ajax({
+                type: "POST",
+                url: "/student/updateInfo.do",
+                data: submitForm,
+                dataType:"json",
+                success: function (ret) {
+                    alert(ret);
+                    if (ret.result == "true") {
+                        $("#successModal").show();
+                        location.reload(true);
+                    } else {
+//                        alert("sfsf");
+//                        alert(ret.failedReason);
+                        $("#errorModalContent").html(ret.failedReason);
+                        $("#errorModal").show();
+                    }
+                },
+                error: function (request, errorMessage, exception) {
+//                    console.log(request);
+//                    console.log(errorMessage);
+//                    console.log(exception);
+                    $("#errorModalContent").html(exception);
+                    $("#errorModal").show();
+                }
+            });
+        },
+        rules:{
+            nickName: {
+                required:true,
+                minlength:3
+            },
+            name:{
+                minlength:2
+            }
+        }
+    })
+    //定义model关闭事件
+    var errorModal = document.getElementById("errorModal");
+    var successModal = document.getElementById("successModal");
+    window.onclick = function (event) {
+        if (event.target == errorModal||event.target==successModal) {
+            errorModal.style.display = "none";
+        }
+    }
+    //联动下拉框
+    var classInfo = $("#classInfo").children("select");
+    var homeInfo = $("#homeInfo").children("select");
+    $("select").change(function (e) {
+//        console.log($(this).next().next());
+        var selectName = $(this).attr("name");
+        var selectVal = $(this).val();
+        var parentId = $(this).parent().attr("id");
+        var postObj = {selectName:selectName,selectVal:selectVal};
+        var postJson = [];
+        postJson.push(postObj);
+        if(selectName!="banji"&&selectName!="city"){
+            if(parentId == "classInfo"){
+                $.ajax({
+                    type:"POST",
+                    url:"dic/classInfo.do",
+                    data:postJson,
+                    dataType:"json",
+                    success:function (ret) {
+                        //显示到nextnext的select中并选定
+                        $(this).next().next().html(ret);
+                    }
+                })
+            }else{
+                $.ajax({
+                    type:"POST",
+                    url:"/dic/homeInfo.do",
+                    data:postJson,
+                    dataType:"json",
+                    success:function (ret) {
+                        //显示到nextnext的select中并选定
+                        $(this).next().next().html(ret);
+                    }
+                })
+            }
+        }
+    });
+    //TODO 头像上传功能
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+ * TODO 
+ * @author wangzx
+ * @date 2017/10/11 15:48.
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  src="js/jquery.min.js"></script>
+</head>
+<body>
+<h1>test=${test}</h1>
+<form method="post" action="127.0.0.1:8080/student/condition" id="studentCondition">
+    <input type="text" name="nickName" placeholder="请输入昵称"/>
+    <input type="text" name="name" placeholder="请输入姓名"/>
+    <input type="text" name="studentId" placeholder="请输入学号"/>
+</form>
+<button id="submitBtn" onclick="submitFunc()">提交</button>
+<script type="text/javascript">
+    function submitFunc() {
+        console.log("submitFunc");
+        var studentCondition = $("#studentCondition");
+        $.post("/student/condition",studentCondition.serialize(),function (data) {
+            alert(data);
+        })
+    }
+</script>
+</body>
+</html>

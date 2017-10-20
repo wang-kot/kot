@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0"/>
+    <title>kot</title>
+    <link rel="stylesheet" type="text/css" href="/css/w3.css"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css"/>
+    <style type="text/css">
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            /*background: #eee;*/
+            font-family: 华文细黑;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #headerContainer {
+            height: 18%;
+        }
+
+        #bodyContainer {
+            height: 82%;
+        }
+
+        .swiper-slide {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="headerContainer">
+    <div class="swiper-container" id="titleContainer">
+        <p class="w3-margin-12 w3-text-blue-grey w3-right" id="logHref"><a href="/log">登陆/注册</a></p>
+        <h4 class="w3-margin-12 w3-text-yellow"><i class="fa fa-home"></i>KOT${studentId}</h4>
+        <div class="swiper-wrapper" id="titleWrapper">
+            <div class="swiper-slide w3-xlarge w3-opacity" style="line-height: 53px" data-hash="home">
+                <div>主页</div>
+            </div>
+            <div class="swiper-slide w3-xlarge w3-opacity" style="line-height: 53px" data-hash="search">
+                <div>搜索</div>
+            </div>
+            <div class="swiper-slide w3-xlarge w3-opacity" style="line-height: 53px" data-hash="news">
+                <div>消息</div>
+            </div>
+            <div class="swiper-slide w3-xlarge w3-opacity" style="line-height: 53px" data-hash="me">
+                <div>我</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="swiper-container" id="bodyContainer">
+    <div class="swiper-wrapper" id="bodyWrapper">
+        <div class="swiper-slide" data-swiper-parallax="-50%" id="home" data-hash="home"></div>
+        <div class="swiper-slide" data-swiper-parallax="-50%" id="search" data-hash="search"></div>
+        <div class="swiper-slide" data-swiper-parallax="-50%" id="news" data-hash="news"></div>
+        <div class="swiper-slide" data-swiper-parallax="-50%" id="me" data-hash="me"></div>
+    </div>
+</div>
+
+<div id="errorModal" class="w3-modal">
+    <div class="w3-modal-content ">
+        <header class="w3-container w3-light-grey">
+            <h3>错误信息!</h3>
+        </header>
+        <div class="w3-container">
+            <p id="errorModalContent"></p>
+        </div>
+    </div>
+</div>
+
+<script src="/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+    $().ready(function () {
+        //参数初始化
+        if(${studentId}){
+            $("#logHref").hide();
+        }else{
+            $("[data-hash='news']").hide();
+            $("[data-hash='me']").hide();
+        }
+        //title swiper控件 页面控制+加载
+        var titleContainer = new Swiper('#titleContainer', {
+            onInit: function (swiper) {
+                swiper.slides.eq(swiper.previousIndex).removeClass("w3-xxlarge w3-text-blue");
+                swiper.slides.eq(swiper.previousIndex).addClass('w3-opacity');
+                swiper.slides.eq(swiper.activeIndex).removeClass('w3-opacity');
+                swiper.slides.eq(swiper.activeIndex).addClass("w3-xxlarge w3-text-blue");
+                console.log("当前窗口：" + swiper.slides.eq(swiper.activeIndex).attr('data-hash'));
+                console.log("上个窗口：" + swiper.slides.eq(swiper.previousIndex).attr('data-hash'));
+                var hrefName = swiper.slides.eq(swiper.activeIndex).attr('data-hash');
+                var tabId = "#" + swiper.slides.eq(swiper.activeIndex).attr('data-hash');
+                if (!$(tabId).html()) {
+                        $.post("/index/"+hrefName, "/index/"+hrefName,
+                        function (data, status) {
+                            $(tabId).html(data);
+                            $.getScript("/js/" + hrefName + ".js", function () {
+
+                            });
+                        });
+                }
+
+            },
+            touchRatio: 0.8,
+            slidesPerView: 3,
+            slidesOffsetBefore: -100,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            normalizeSlideIndex: false,
+//            hashnav: true,
+//            hashnavWatchState: true,
+        });
+        //页面切换前回调函数
+        titleContainer.params.onSlideChangeStart = function (swiper) {
+            swiper.slides.eq(swiper.previousIndex).removeClass("w3-xxlarge w3-text-blue");
+            swiper.slides.eq(swiper.previousIndex).addClass('w3-opacity');
+            swiper.slides.eq(swiper.activeIndex).removeClass('w3-opacity');
+            swiper.slides.eq(swiper.activeIndex).addClass("w3-xxlarge w3-text-blue");
+            console.log("当前窗口：" + swiper.slides.eq(swiper.activeIndex).attr('data-hash'));
+            console.log("上个窗口：" + swiper.slides.eq(swiper.previousIndex).attr('data-hash'));
+            var hrefName = swiper.slides.eq(swiper.activeIndex).attr('data-hash');
+            var tabId = "#" + swiper.slides.eq(swiper.activeIndex).attr('data-hash');
+            if (!$(tabId).html()) {
+                $.post("/index/"+hrefName, "/index/"+hrefName,
+                    function (data, status) {
+                        $(tabId).html(data);
+                        $.getScript("/js/" + hrefName + ".js", function () {
+
+                        });
+                    });
+            }
+        };
+        //bodySwiper定义
+        var bodyContainer = new Swiper('#bodyContainer', {
+            parallax: true,
+//            hashnav: true,
+//            hashnavWatchState: true,
+        });
+        //title和content互相控制
+        titleContainer.params.control = bodyContainer;
+        bodyContainer.params.control = titleContainer;
+
+        //定义model关闭事件
+        var errorModal = document.getElementById("errorModal");
+        window.onclick = function (event) {
+            if (event.target == errorModal) {
+                errorModal.style.display = "none";
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

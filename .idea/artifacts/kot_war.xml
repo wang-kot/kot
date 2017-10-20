@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="kot:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="kot.war">
+      <element id="artifact" artifact-name="kot:war exploded" />
+    </root>
+  </artifact>
+</component>

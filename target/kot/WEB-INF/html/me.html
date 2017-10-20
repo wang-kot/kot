@@ -1,0 +1,79 @@
+<style>
+    .blockCenter {
+        height: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+</style>
+<div class="w3-container">
+    <div id="meContainer">
+        <div id="meHeaderInfo" class="w3-pale-blue w3-card-2">
+            <span id="meId" style="visibility: hidden">123</span>
+            <div id="mePhotoDiv">
+                <img src="/image/photo.jpg" id="mePhotoImg" class="blockCenter">
+            </div>
+            <div type="text" id="meNickName" class="w3-center w3-xlarge w3-slim">${studentDetail.nickName!"未填写"}</div>
+            <div class="w3-center">
+                <span>真实姓名:</span>
+                <span type="text" id="meName">${studentDetail.name!"未填写"}</span>
+            </div>
+            <div class="w3-center">
+                <span>手机号码:</span>
+                <span type="text" id="mePhone">${studentDetail.phone!"未填写"}</span>
+                <span class="w3-large">|</span>
+                <span>email:</span>
+                <span type="text" id="meEmail">${studentDetail.email!"未填写"}</span>
+            </div>
+
+        </div>
+
+        <div id="meOtherInfo">
+            <br>
+            <div class="w3-border-left w3-border-blue w3-row">
+                <div class="w3-col s6">
+                    <label class="w3-label">学校：</label>
+                    <span>${school!"财大"}</span>
+                </div>
+                <div class="w3-col s6">
+                    <label class="w3-label">学院：</label>
+                    <span>${xueyuan!"统数"}</span>
+                </div>
+                <div class="w3-col s6">
+                    <label class="w3-label">专业：</label>
+                    <span>${zhuanye!"信科"}</span>
+                </div>
+                <div class="w3-col s6">
+                    <label class="w3-label">班级：</label>
+                    <span>${banji!"1302"}</span>
+                </div>
+            </div>
+            <br>
+            <div class="w3-border-left w3-border-blue w3-row">
+                <div class="w3-col s6">
+                    <label class="w3-label">家乡：</label>
+                    <span>${sheng!"河南"}/${shi!"永城"}</span>
+                </div>
+                <div class="w3-col s6">
+                    <label class="w3-label">生日：</label>
+                    <span>${studentDetail.birthday!"94/12"}</span>
+                </div>
+            </div>
+            <label class="w3-label">允许别人回复你的评论：</label>
+            <span>
+                <#if studentDetail.commentPermissions=="1">
+                    <input style="width: auto;" type="radio" class="w3-radio" checked>是
+                    <input style="width: auto;" type="radio" class="w3-radio" disabled>否
+                    <#else>
+                        <input style="width: auto;" type="radio" class="w3-radio" disabled>是
+                        <input style="width: auto;" type="radio" class="w3-radio" checked>否
+                </#if>
+
+            </span>
+            <br>
+            <br>
+            <button class="w3-btn-block w3-blue" id="meEditBtn">编辑</button>
+
+        </div>
+    </div>
+</div>

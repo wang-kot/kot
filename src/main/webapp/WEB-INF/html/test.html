@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/jquery.min.js"></script>
+    <script src="tapmodo-Jcrop-1902fbc/js/jquery.Jcrop.js"></script>
+
+    <style type="text/css">
+        img{
+            width:100%;
+            height:80%;
+        }
+    </style>
+    <script language="Javascript">
+        var jcropApi;
+        jQuery(function($) {
+            $('#image').Jcrop({
+                onChange:logParam,
+                onSelect:logParam
+            },function () {
+                jcropApi= this;
+            });
+            jcropApi.setImage('bgpicture2.jpg');
+            $("#image").attr("src","bgpicture.jpg");
+            console.log(jcropApi.getBounds());
+            console.log(jcropApi.getWidgetSize());
+            console.log(jcropApi.getScaleFactor());
+        });
+        function logParam(c) {
+            console.log(c.x);
+            console.log(c.y);
+            console.log(c.x2);
+            console.log(c.y2);
+            console.log(c.w);
+            console.log(c.h);
+        }
+    </script>
+    <link rel="stylesheet" href="tapmodo-Jcrop-1902fbc/css/jquery.Jcrop.css">
+</head>
+<body style="height: 100%;">
+<div id="imgContent" style="height: 50%;">
+    <img id="image" src="photo.jpg">
+</div>
+<script>
+
+</script>
+</body>
+</html>

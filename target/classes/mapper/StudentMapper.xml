@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.znufew.kot.mapper.StudentMapper">
+  <resultMap id="BaseResultMap" type="cn.znufew.kot.entity.Student">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="identify" jdbcType="BIT" property="identify" />
+    <result column="student_id" jdbcType="BIGINT" property="studentId" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sex" jdbcType="BIT" property="sex" />
+    <result column="birthday" jdbcType="BIGINT" property="birthday" />
+    <result column="home_code" jdbcType="VARCHAR" property="homeCode" />
+    <result column="class_code" jdbcType="VARCHAR" property="classCode" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone" jdbcType="BIGINT" property="phone" />
+    <result column="comment_permissions" jdbcType="CHAR" property="commentPermissions" />
+    <result column="regist_time" jdbcType="BIGINT" property="registTime" />
+    <result column="identify_time" jdbcType="BIGINT" property="identifyTime" />
+    <result column="passw" jdbcType="VARCHAR" property="passw" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, identify, student_id, nick_name, name, sex, birthday, home_code, class_code, 
+    email, phone, comment_permissions, regist_time, identify_time, passw
+  </sql>
+  <select id="selectByExample" parameterType="cn.znufew.kot.entity.StudentExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from student
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from student
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from student
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="cn.znufew.kot.entity.StudentExample">
+    delete from student
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="cn.znufew.kot.entity.Student">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into student (identify, student_id, nick_name, 
+      name, sex, birthday, home_code, 
+      class_code, email, phone, 
+      comment_permissions, regist_time, identify_time, 
+      passw)
+    values (#{identify,jdbcType=BIT}, #{studentId,jdbcType=BIGINT}, #{nickName,jdbcType=VARCHAR}, 
+      #{name,jdbcType=VARCHAR}, #{sex,jdbcType=BIT}, #{birthday,jdbcType=BIGINT}, #{homeCode,jdbcType=VARCHAR}, 
+      #{classCode,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{phone,jdbcType=BIGINT}, 
+      #{commentPermissions,jdbcType=CHAR}, #{registTime,jdbcType=BIGINT}, #{identifyTime,jdbcType=BIGINT}, 
+      #{passw,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.znufew.kot.entity.Student">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="identify != null">
+        identify,
+      </if>
+      <if test="studentId != null">
+        student_id,
+      </if>
+      <if test="nickName != null">
+        nick_name,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="homeCode != null">
+        home_code,
+      </if>
+      <if test="classCode != null">
+        class_code,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="commentPermissions != null">
+        comment_permissions,
+      </if>
+      <if test="registTime != null">
+        regist_time,
+      </if>
+      <if test="identifyTime != null">
+        identify_time,
+      </if>
+      <if test="passw != null">
+        passw,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="identify != null">
+        #{identify,jdbcType=BIT},
+      </if>
+      <if test="studentId != null">
+        #{studentId,jdbcType=BIGINT},
+      </if>
+      <if test="nickName != null">
+        #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=BIT},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=BIGINT},
+      </if>
+      <if test="homeCode != null">
+        #{homeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="classCode != null">
+        #{classCode,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=BIGINT},
+      </if>
+      <if test="commentPermissions != null">
+        #{commentPermissions,jdbcType=CHAR},
+      </if>
+      <if test="registTime != null">
+        #{registTime,jdbcType=BIGINT},
+      </if>
+      <if test="identifyTime != null">
+        #{identifyTime,jdbcType=BIGINT},
+      </if>
+      <if test="passw != null">
+        #{passw,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="cn.znufew.kot.entity.StudentExample" resultType="java.lang.Long">
+    select count(*) from student
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update student
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.identify != null">
+        identify = #{record.identify,jdbcType=BIT},
+      </if>
+      <if test="record.studentId != null">
+        student_id = #{record.studentId,jdbcType=BIGINT},
+      </if>
+      <if test="record.nickName != null">
+        nick_name = #{record.nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.name != null">
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sex != null">
+        sex = #{record.sex,jdbcType=BIT},
+      </if>
+      <if test="record.birthday != null">
+        birthday = #{record.birthday,jdbcType=BIGINT},
+      </if>
+      <if test="record.homeCode != null">
+        home_code = #{record.homeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.classCode != null">
+        class_code = #{record.classCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.email != null">
+        email = #{record.email,jdbcType=VARCHAR},
+      </if>
+      <if test="record.phone != null">
+        phone = #{record.phone,jdbcType=BIGINT},
+      </if>
+      <if test="record.commentPermissions != null">
+        comment_permissions = #{record.commentPermissions,jdbcType=CHAR},
+      </if>
+      <if test="record.registTime != null">
+        regist_time = #{record.registTime,jdbcType=BIGINT},
+      </if>
+      <if test="record.identifyTime != null">
+        identify_time = #{record.identifyTime,jdbcType=BIGINT},
+      </if>
+      <if test="record.passw != null">
+        passw = #{record.passw,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update student
+    set id = #{record.id,jdbcType=BIGINT},
+      identify = #{record.identify,jdbcType=BIT},
+      student_id = #{record.studentId,jdbcType=BIGINT},
+      nick_name = #{record.nickName,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
+      sex = #{record.sex,jdbcType=BIT},
+      birthday = #{record.birthday,jdbcType=BIGINT},
+      home_code = #{record.homeCode,jdbcType=VARCHAR},
+      class_code = #{record.classCode,jdbcType=VARCHAR},
+      email = #{record.email,jdbcType=VARCHAR},
+      phone = #{record.phone,jdbcType=BIGINT},
+      comment_permissions = #{record.commentPermissions,jdbcType=CHAR},
+      regist_time = #{record.registTime,jdbcType=BIGINT},
+      identify_time = #{record.identifyTime,jdbcType=BIGINT},
+      passw = #{record.passw,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.znufew.kot.entity.Student">
+    update student
+    <set>
+      <if test="identify != null">
+        identify = #{identify,jdbcType=BIT},
+      </if>
+      <if test="studentId != null">
+        student_id = #{studentId,jdbcType=BIGINT},
+      </if>
+      <if test="nickName != null">
+        nick_name = #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=BIT},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=BIGINT},
+      </if>
+      <if test="homeCode != null">
+        home_code = #{homeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="classCode != null">
+        class_code = #{classCode,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=BIGINT},
+      </if>
+      <if test="commentPermissions != null">
+        comment_permissions = #{commentPermissions,jdbcType=CHAR},
+      </if>
+      <if test="registTime != null">
+        regist_time = #{registTime,jdbcType=BIGINT},
+      </if>
+      <if test="identifyTime != null">
+        identify_time = #{identifyTime,jdbcType=BIGINT},
+      </if>
+      <if test="passw != null">
+        passw = #{passw,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.znufew.kot.entity.Student">
+    update student
+    set identify = #{identify,jdbcType=BIT},
+      student_id = #{studentId,jdbcType=BIGINT},
+      nick_name = #{nickName,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=BIT},
+      birthday = #{birthday,jdbcType=BIGINT},
+      home_code = #{homeCode,jdbcType=VARCHAR},
+      class_code = #{classCode,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=BIGINT},
+      comment_permissions = #{commentPermissions,jdbcType=CHAR},
+      regist_time = #{registTime,jdbcType=BIGINT},
+      identify_time = #{identifyTime,jdbcType=BIGINT},
+      passw = #{passw,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
