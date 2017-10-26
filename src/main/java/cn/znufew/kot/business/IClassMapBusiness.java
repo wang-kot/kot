@@ -22,4 +22,6 @@ public interface IClassMapBusiness extends IBaseBusiness<ClassMap,ClassMapExampl
     ClassMap[] getCompleteClassMaps(ClassMap classMap);
 
     List<ClassMap> getSameLevelClassMap(ClassMap classMap);
+
+    ClassMap getRootClassMap();
 }

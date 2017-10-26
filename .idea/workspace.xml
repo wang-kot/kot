@@ -1,21 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da739d11-06c0-476e-8f99-7fd49f72d6f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/kot_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/kot_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kot.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/hello.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterPath="" />
+    <list default="true" id="da739d11-06c0-476e-8f99-7fd49f72d6f4" name="Default" comment="firstCommit">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/kot/js/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/kot/js/jquery.Jcrop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/kot/js/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/kot/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/kot/js/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/kot/js/swiper.jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/kot/js/swiper.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/znufew/kot/action/DicAction.class" afterPath="$PROJECT_DIR$/target/classes/cn/znufew/kot/action/DicAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/znufew/kot/action/IndexAction.class" afterPath="$PROJECT_DIR$/target/classes/cn/znufew/kot/action/IndexAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/znufew/kot/action/TeacherAction.class" afterPath="$PROJECT_DIR$/target/classes/cn/znufew/kot/action/TeacherAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/znufew/kot/business/IClassMapBusiness.class" afterPath="$PROJECT_DIR$/target/classes/cn/znufew/kot/business/IClassMapBusiness.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/znufew/kot/business/impl/ClassMapBusinessImpl.class" afterPath="$PROJECT_DIR$/target/classes/cn/znufew/kot/business/impl/ClassMapBusinessImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/action/DicAction.class" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/action/DicAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/action/IndexAction.class" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/action/IndexAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/action/TeacherAction.class" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/action/TeacherAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/business/IClassMapBusiness.class" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/business/IClassMapBusiness.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/business/impl/ClassMapBusinessImpl.class" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/classes/cn/znufew/kot/business/impl/ClassMapBusinessImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/kot_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/kot_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kot.iml" afterPath="$PROJECT_DIR$/kot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/DicAction.java" afterPath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/DicAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/IndexAction.java" afterPath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/IndexAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/TeacherAction.java" afterPath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/TeacherAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IClassMapBusiness.java" afterPath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IClassMapBusiness.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/ClassMapBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/ClassMapBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/me.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/me.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/search.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/studentEdit.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/studentEdit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/me.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/search.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/html/index.html" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/html/login.html" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/html/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/html/me.html" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/html/me.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/html/search.html" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/html/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/WEB-INF/html/studentEdit.html" afterPath="$PROJECT_DIR$/target/kot/WEB-INF/html/studentEdit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/js/me.js" afterPath="$PROJECT_DIR$/target/kot/js/me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kot/js/search.js" afterPath="$PROJECT_DIR$/target/kot/js/search.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/ajax.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/plugins/ajax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.Jcrop.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/plugins/jquery.Jcrop.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.cookie.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/plugins/jquery.cookie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/plugins/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/plugins/jquery.validate.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/swiper.jquery.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/plugins/swiper.jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/swiper.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/plugins/swiper.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,31 +86,132 @@
       <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="32" selection-end-column="51" />
+            <state relative-caret-position="432">
+              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
-                <element signature="n#style#0;n#span#1;n#p#0;n#div#2;n#form#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#2;n#form#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/mapper/StudentMapper.java">
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="200">
+              <caret line="97" column="55" lean-forward="false" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/search.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="60" column="106" lean-forward="false" selection-start-line="60" selection-start-column="106" selection-end-line="60" selection-end-column="106" />
+            <state relative-caret-position="172">
+              <caret line="91" column="42" lean-forward="true" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/IndexAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassMapBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/ClassMapBusinessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721">
+              <caret line="107" column="50" lean-forward="false" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3344#3345#0" expanded="true" />
+                <element signature="e#3404#3405#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeacherAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/TeacherAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1052">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2106#2114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StudentDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/StudentBusinessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#629#630#0" expanded="false" />
+                <element signature="e#689#690#0" expanded="false" />
+                <element signature="e#747#748#0" expanded="false" />
+                <element signature="e#808#809#0" expanded="false" />
+                <element signature="e#854#855#0" expanded="false" />
+                <element signature="e#878#879#0" expanded="false" />
+                <element signature="e#919#920#0" expanded="false" />
+                <element signature="e#970#971#0" expanded="false" />
+                <element signature="e#1020#1021#0" expanded="false" />
+                <element signature="e#1080#1081#0" expanded="false" />
+                <element signature="e#1148#1149#0" expanded="false" />
+                <element signature="e#1209#1210#0" expanded="false" />
+                <element signature="e#1259#1260#0" expanded="false" />
+                <element signature="e#1318#1319#0" expanded="false" />
+                <element signature="e#1569#1570#0" expanded="false" />
+                <element signature="e#1593#1594#0" expanded="false" />
+                <element signature="e#1655#1656#0" expanded="false" />
+                <element signature="e#1679#1680#0" expanded="false" />
+                <element signature="e#1732#1733#0" expanded="false" />
+                <element signature="e#1756#1757#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ITeacherBusiness.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/ITeacherBusiness.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="11" column="82" lean-forward="false" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeacherBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/TeacherBusinessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +250,8 @@
       <find>selectBy</find>
       <find>Area</find>
       <find>area</find>
+      <find>cook</find>
+      <find>meI</find>
     </findStrings>
     <replaceStrings>
       <replace>TStudent</replace>
@@ -137,9 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/kot Generate POJOs.groovy" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/student.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/dao/IBaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/dao/IStudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/mapper/IStudentDao.java" />
@@ -167,7 +300,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/mapper/UpDownMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/mapper/UpDownSumMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/entity/Student.java" />
         <option value="$PROJECT_DIR$/src/test/java/StudentDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/StudentActionTest.java" />
@@ -175,19 +307,23 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IDicBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/StudentAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/LogAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/me.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/me.js" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IClassMapBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IAreaMapBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/AreaMapBusinessImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/ClassMapBusinessImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/IndexAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/me.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/me.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/studentEdit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IClassMapBusiness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/IndexAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/ClassMapBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/DicAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/ITeacherBusiness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/TeacherAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/TeacherBusinessImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/search.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/search.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" />
       </list>
     </option>
   </component>
@@ -433,7 +569,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schema" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -966,43 +1139,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Extensions" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.intellij.database" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schema" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Extensions" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.intellij.database" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1014,22 +1150,23 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\kot\src\main\resources\mybatis-generatorConfig" />
-      <recent name="D:\workspace\kot\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\kot\src\main\resources\mapper" />
       <recent name="D:\workspace\kot\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\workspace\kot\src\main\java\cn\znufew\kot\business\impl" />
       <recent name="D:\workspace\kot\src\main\java\cn\znufew\kot\dao" />
       <recent name="D:\workspace\kot\src\main\java\cn\znufew\kot\entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\kot\src\main\webapp\js\plugin" />
+      <recent name="D:\workspace\kot\src\main\resources\mybatis-generatorConfig" />
+      <recent name="D:\workspace\kot\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcatrun">
@@ -1725,6 +1862,12 @@
       <workItem from="1508202427140" duration="1985000" />
       <workItem from="1508318373971" duration="1946000" />
       <workItem from="1508375764256" duration="7675000" />
+      <workItem from="1508483721672" duration="161000" />
+      <workItem from="1508483971757" duration="63000" />
+      <workItem from="1508750199921" duration="97000" />
+      <workItem from="1508915830907" duration="7119000" />
+      <workItem from="1508942112490" duration="8067000" />
+      <workItem from="1509000207340" duration="4900000" />
     </task>
     <task id="LOCAL-00001" summary="firstCommit">
       <created>1507618843317</created>
@@ -1769,7 +1912,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116258000" />
+    <option name="totallyTimeSpent" value="136665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1782,7 +1925,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1798,16 +1941,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3952435" sideWeight="0.49784714" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34249714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2945279" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32027897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1819,11 +1962,29 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="100" width="1732" height="838" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1861,7 +2022,7 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="55" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1870,15 +2031,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/entity/AreaMapExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2200">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/mapper/BaseMapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/KeywordsMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -1997,19 +2149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="176" column="14" lean-forward="false" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/entity/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2021,7 +2164,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/swiper.min.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/plugins/swiper.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2055,16 +2198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StudentDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="48" column="81" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="48" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StudentActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -2073,30 +2206,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/TeacherAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IDicBusiness.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="172" column="29" lean-forward="true" selection-start-line="172" selection-start-column="29" selection-end-line="172" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/KeywordsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/StudentAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -2123,30 +2233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/me.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-518">
-          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="93" column="31" lean-forward="false" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/me.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -2154,9 +2240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2164,7 +2247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2175,66 +2257,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/studentEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/IndexAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1880">
-          <caret line="108" column="91" lean-forward="false" selection-start-line="108" selection-start-column="91" selection-end-line="108" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/DicAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/StudentBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IClassMapBusiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/ClassMapBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/AreaMapBusinessImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2243,7 +2271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2251,24 +2278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#180#181#0" expanded="false" />
-            <element signature="e#205#206#0" expanded="false" />
-            <element signature="e#239#240#0" expanded="false" />
-            <element signature="e#267#268#0" expanded="false" />
-            <element signature="e#300#301#0" expanded="false" />
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#377#378#0" expanded="false" />
-            <element signature="e#417#418#0" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#515#516#0" expanded="false" />
-            <element signature="e#576#577#0" expanded="false" />
-            <element signature="e#607#608#0" expanded="false" />
-            <element signature="e#634#635#0" expanded="false" />
-            <element signature="e#674#675#0" expanded="false" />
-            <element signature="e#735#736#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2276,6 +2285,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/studentEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/me.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/me.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="76" column="34" lean-forward="false" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -2284,24 +2322,150 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/KeywordsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/DicAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/IClassMapBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/ITeacherBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="82" lean-forward="false" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/StudentBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#808#809#0" expanded="false" />
+            <element signature="e#854#855#0" expanded="false" />
+            <element signature="e#878#879#0" expanded="false" />
+            <element signature="e#919#920#0" expanded="false" />
+            <element signature="e#970#971#0" expanded="false" />
+            <element signature="e#1020#1021#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1148#1149#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1259#1260#0" expanded="false" />
+            <element signature="e#1318#1319#0" expanded="false" />
+            <element signature="e#1569#1570#0" expanded="false" />
+            <element signature="e#1593#1594#0" expanded="false" />
+            <element signature="e#1655#1656#0" expanded="false" />
+            <element signature="e#1679#1680#0" expanded="false" />
+            <element signature="e#1732#1733#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StudentDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/TeacherBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/business/impl/ClassMapBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="107" column="50" lean-forward="false" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3344#3345#0" expanded="true" />
+            <element signature="e#3404#3405#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="32" selection-end-column="51" />
+        <state relative-caret-position="432">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <element signature="n#style#0;n#span#1;n#p#0;n#div#2;n#form#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#2;n#form#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/TeacherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1052">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2106#2114#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="60" column="106" lean-forward="false" selection-start-line="60" selection-start-column="106" selection-end-line="60" selection-end-column="106" />
+        <state relative-caret-position="200">
+          <caret line="97" column="55" lean-forward="false" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/znufew/kot/action/IndexAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="91" column="42" lean-forward="true" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
           <folding />
         </state>
       </provider>

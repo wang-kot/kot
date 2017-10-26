@@ -103,4 +103,8 @@ public class ClassMapBusinessImpl implements IClassMapBusiness {
         criteria.andParentIdEqualTo(classMap.getParentId());
         return classMapMapper.selectByExample(classMapExample);
     }
+
+    public ClassMap getRootClassMap() {
+        return classMapMapper.selectByPrimaryKey(2l);
+    }
 }

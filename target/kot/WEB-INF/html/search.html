@@ -5,49 +5,60 @@
         left: 0px;
         width: 100%;
         opacity: 0.9;
-        height:25%;
+        height: 30%;
     }
-    #searchResultContent{
-        height:75%;
+
+    #searchResultContent {
+        height: 70%;
+        overflow: scroll;
     }
 </style>
-<div id="searchResultContent"></div>
+<div id="searchResultContent" class="w3-container">
+    <p class="w3-card-2">热门教师</p>
+    <ul class="w3-ul w3-card-2">
+        <li value="12">马忠明</li>
+        <li value="13">王正忠</li>
+        <li value="12">马忠明</li>
+        <li value="13">王正忠</li>
+        <li value="12">马忠明</li>
+        <li value="13">王正忠</li>
+    </ul>
+</div>
 <div class="searchDiv w3-card" id="searchDiv">
-        <form id="searchTeacherForm">
-            <div class="w3-row" id="searchTeacherNameDiv">
-                <input type="text" class="w3-input w3-col s9" placeholder="根据教师姓名搜索" name="teacherName">
-                <button class="w3-btn w3-col s3 w3-blue w3-large" id="searchBtn">搜索</button>
-            </div>
-            <div id="searchSelectDiv">
-                <select class="w3-select" id="schoolSel" name="school">
-                    <option value="kong">选择学校</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                </select>
-                <select class="w3-select" id="xueyuanSel" name="xueyuan" style="display: none;">
-                    <option value="kong">选择学院</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                </select>
-                <select class="w3-select" id="zhuanyeSel" name="zhuanye" style="display: none;">
-                    <option value="kong">选择专业</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                </select>
-            </div>
-            <div id="labDiv">
-                <p>
-                    筛选条件(点击更改):
-                    <span class="w3-tag w3-pale-blue" id="schoolSpan">选择学校</span>
-                    <span class="w3-tag w3-pale-blue" id="xueyuanSpan" style="display: none;">选择学院</span>
-                    <span class="w3-tag w3-pale-blue" id="zhuanyeSpan" style="display: none;">选择专业</span>
-                </p>
-            </div>
-        </form>
+    <form id="searchTeacherForm">
+        <div class="w3-row" id="searchTeacherNameDiv">
+            <input type="text" class="w3-input w3-col s9" placeholder="根据教师姓名搜索" name="teacherName">
+            <button class="w3-btn w3-col s3 w3-blue w3-large" id="searchBtn">搜索</button>
+        </div>
+        <div id="searchSelectDiv">
+            <select class="w3-select" id="schoolSel" name="school">
+                <option value="kong">选择学校</option>
+                <#if schools??>
+                    <#list schools as school>
+                        <option value="${school.id!}">${school.name!}</option>
+                    </#list>
+                </#if>
+            </select>
+            <select class="w3-select" id="xueyuanSel" name="xueyuan" style="display: none;">
+                <option value="kong">选择学院</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+            </select>
+            <select class="w3-select" id="zhuanyeSel" name="zhuanye" style="display: none;">
+                <option value="kong">选择专业</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+            </select>
+        </div>
+        <div id="labDiv">
+            <p class="w3-small">筛选条件(点击更改):</p>
+            <span class="w3-tag w3-pale-blue" id="schoolSpan">选择学校</span>
+            <span class="w3-tag w3-pale-blue" id="xueyuanSpan" style="display: none;">选择学院</span>
+            <span class="w3-tag w3-pale-blue" id="zhuanyeSpan" style="display: none;">选择专业</span>
+        </div>
+    </form>
 </div>

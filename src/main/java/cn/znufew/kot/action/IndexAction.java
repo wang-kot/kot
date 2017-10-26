@@ -78,6 +78,10 @@ public class IndexAction {
                     }
                 }
             }
+        }else if(indexPageName.equals("search")){
+            ClassMap rootClassMap = iClassMapBusiness.getRootClassMap();
+            List<ClassMap> subClassMaps = iClassMapBusiness.getSubClassMaps(rootClassMap);
+            mv.addObject("schools",subClassMaps);
         }
 
         return mv;

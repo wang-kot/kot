@@ -1,5 +1,5 @@
 //span点击事件
-$("#labDiv p").children().click(function () {
+$("#labDiv span").click(function () {
     if ($(this).attr("id") == "schoolSpan") {
         delSelAndSpanObj("xueyuan");
         delSelAndSpanObj("zhuanye");
@@ -17,12 +17,32 @@ $("select").change(function () {
         var objName = $(this).attr("name");
         var objId = $(this).val();
         var spanObj = $("#" + objName + "Span");
+        var selObj = $("#" + objName + "Sel");
         spanObj.text($(this).children("option:selected").text()).attr("class", "w3-tag w3-blue");
         $(this).hide();
-        if ($(this).attr("name") != "zhuanye") {
-            $(this).next().html(getSubClass(objId));
-            $(this).next().show();
-            spanObj.next().show();
+        if (objName != "zhuanye") {
+            //获取下级菜单
+            $.ajax({
+                type: "POST",
+                url: "/dic/classMap/getSubClassMap.do",
+                data:"supId="+objId,
+                success: function (ret) {
+                    var backHtml = "";
+                    if(objName == "school"){
+                        backHtml += "<option value='kong'>请选择学院</option>";
+                    }else{
+                        backHtml += "<option value='kong'>请选择专业</option>";
+                    }
+                    for(var o in ret){
+                        backHtml+="<option value='"+ret[o].id+"'>"+ret[o].name+"</option>";
+                        // console.log(ret[o]);
+                    }
+                    selObj.next().html(backHtml);
+                    selObj.next().show();
+                    spanObj.next().show();
+                }
+
+            })
         }
     }
 )
@@ -56,11 +76,6 @@ function showSelAndSpanObj(objName) {
     selObj.val("kong");
 }
 
-//获取下级菜单
-function getSubClass(objId) {
-    var backData = "<option value='two'>2</option><option value='three'>3</option><option value = 'four' >4</option>";
-    return backData;
-}
 
 //TODO 正则表达式过滤特殊字符
 $("#searchTeacherForm").validate({
@@ -73,14 +88,23 @@ $("#searchTeacherForm").validate({
             data: submitForm,
 //            dataType:"json",
             success: function (ret) {
-                alert(ret);
-                if (ret.result == "true") {
-                    $("#searchResultContent").html(ret.data);
+                console.log(ret);
+                if (ret!="[]") {
+                    // console.log(ret);
+                    var backHtml = "";
+                    for(var o in ret){
+                        backHtml += "<li value='"+ret[o].id+"'>"+ret[o].nickName+"</li>"
+                    }
+                    $("#searchResultContent p").hide();
+                    $("#searchResultContent ul").html(backHtml);
+                    //li点击事件
+                    $("#searchResultContent ul li").bind("click",function(){
+                        location.href = "/teacher/toInfo/"+$(this).val();
+                    })
                 } else {
 //                        alert("sfsf");
 //                        alert(ret.failedReason);
-                    $("#errorModalContent").html(ret.failedReason);
-                    $("#errorModal").show();
+                    $("#searchResultContent ul").html("<li>zhei个结构木有老师啊</li>");
                 }
             },
             error: function (request, errorMessage, exception) {
@@ -96,4 +120,9 @@ $("#searchTeacherForm").validate({
         teacherName: {}
     }
 });
+
+//li点击事件
+$("#searchResultContent ul li").bind("click",function(){
+    location.href = "/teacher/toInfo/"+$(this).val();
+})
 
