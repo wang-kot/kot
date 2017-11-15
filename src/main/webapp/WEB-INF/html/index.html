@@ -89,7 +89,7 @@
 <script type="text/javascript">
     $().ready(function () {
         //参数初始化
-        <#if studentId?? & studentId != 0>
+        <#if studentId?? & studentId != "0">
             $("#logHref").hide();
         <#else>
             $("[data-hash='news']").hide();
